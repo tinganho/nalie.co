@@ -53,6 +53,10 @@ export function getClassName(c: new<P extends Props, S, E extends Elements>(prop
     return (c as any).name;
 }
 
+export function toCamelCase(text: string): string {
+    return text[0].toLowerCase() + text.slice(1);
+}
+
 interface ComposerOptions {
 
     /**
@@ -234,7 +238,7 @@ export class ServerComposer {
             }
             this.defaultDocument = {
                 component: document as any,
-                importPath: path.join(this.options.defaultDocumentFolder, getClassName(document)),
+                importPath: path.join(this.options.defaultDocumentFolder, toCamelCase(getClassName(document))),
             }
         }
 
@@ -405,7 +409,7 @@ export class Page {
             }
             this.currentPlatform.document = {
                 component: document as any,
-                importPath: path.join(this.serverComposer.options.defaultDocumentFolder, getClassName(document)),
+                importPath: path.join(this.serverComposer.options.defaultDocumentFolder, toCamelCase(getClassName(document))),
             }
         }
 
@@ -427,7 +431,7 @@ export class Page {
             }
             this.currentPlatform.layout = {
                 component: layout as any,
-                importPath: path.join(this.serverComposer.options.defaultLayoutFolder, getClassName(layout)),
+                importPath: path.join(this.serverComposer.options.defaultLayoutFolder, toCamelCase(getClassName(layout))),
             }
         }
 
@@ -444,7 +448,7 @@ export class Page {
                 }
                 newContents[region] = {
                     component: content,
-                    importPath: path.join(this.serverComposer.options.defaultContentFolder, getClassName(content)),
+                    importPath: path.join(this.serverComposer.options.defaultContentFolder, toCamelCase(getClassName(content))),
                 }
             }
         }
