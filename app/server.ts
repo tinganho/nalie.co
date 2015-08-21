@@ -2,6 +2,7 @@
 /// <reference path='../typings/express/express.d.ts' />
 /// <reference path='../typings/morgan/morgan.d.ts' />
 /// <reference path='../typings/cookie-parser/cookie-parser.d.ts' />
+/// <reference path='../typings/compression/compression.d.ts' />
 /// <reference path='../typings/express-request-language/express-request-language.d.ts' />
 
 (global as any).inServer = true;
@@ -27,6 +28,7 @@ import { TheWorldWillChange } from './contents/theWorldWillChange/theWorldWillCh
 import { JoinForcesWithUs } from './contents/joinForcesWithUs/joinForcesWithUs';
 import { Footer } from './contents/footer/footer';
 import Debug from './debug';
+import compression = require('compression');
 import requestLanguage = require('express-request-language');
 import cookieParser = require('cookie-parser');
 import {
@@ -37,6 +39,7 @@ import {
     ComposerContent } from './component/layerComponents';
 
 let app = express();
+app.use(compression());
 app.use(logger('dev'));
 if (process.env.NODE_ENV === 'production') {
     app.use((req, res, next) => {

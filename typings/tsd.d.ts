@@ -17,3 +17,4 @@
 /// <reference path="platform/platform.d.ts" />
 /// <reference path="rimraf/rimraf.d.ts" />
 /// <reference path="cookie-parser/cookie-parser.d.ts" />
+/// <reference path="compression/compression.d.ts" />
