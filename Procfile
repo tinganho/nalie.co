@@ -1,2 +1,2 @@
 
-web: vendor/node/bin/node built/app/start
+web: NODE_ENV=production vendor/node/bin/node bin/start
