@@ -15,7 +15,9 @@ var Builder = require('systemjs-builder');
 var rev = require('gulp-rev');
 var browserify = require('gulp-browserify');
 var revReplace = require('gulp-rev-replace');
-
+var uglify = require('gulp-uglify');
+var filter = require('gulp-filter');
+var ocss = require('gulp-ocss');
 
 var exec = cp.exec;
 gulp.task('bundle', ['tsc:dist'], function(next) {
@@ -172,11 +174,20 @@ gulp.task('l10ns:watch', function() {
 });
 
 gulp.task('rev', ['bundle', 'compass:app:dist'], function() {
-   return gulp.src('built/app/public/**/*.{css,svg,jpg,png,js,ico,icns}')
+    var jsFilter = filter("**/*.js");
+    var cssFilter = filter("**/*.css");
+
+    return gulp.src('built/app/public/**/*.{css,svg,jpg,png,js,ico,icns}')
         .pipe(rev())
         .pipe(gulp.dest('built/app/public'))
         .pipe(rev.manifest())
         .pipe(revReplace())
+        .pipe(jsFilter)
+        .pipe(uglify())
+        .pipe(jsFilter.restore())
+        .pipe(cssFilter)
+        .pipe(ocss)
+        .pipe(cssFilter.restore())
         .pipe(gulp.dest('built/app/public'));
 });
 
