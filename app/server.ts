@@ -38,7 +38,7 @@ import {
 
 let app = express();
 app.use(logger('dev'));
-app.use('/public', express.static(path.join(__dirname, '../../public')));
+app.use('/public', express.static(path.join(__dirname, '../../public'), process.env.NODE_ENV == 'production' ? { maxAge: 365*24*3600 } : undefined));
 app.use('/', express.static(__dirname));
 app.use(cookieParser());
 app.use(requestLanguage({

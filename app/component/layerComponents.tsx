@@ -10,6 +10,8 @@ import Sys from '../sys';
 let sys: typeof Sys = inServer ? __r('../sys').default : undefined;
 import Path = require('path');
 let path: typeof Path = inServer ? __r('path') : undefined;
+import Conf = require('../../conf/conf');
+let cf: typeof Conf.default = inServer ? __r('../../conf/conf').default : undefined;
 
 export interface PageLayerDeclaration {
     importPath: string;
@@ -65,7 +67,7 @@ export abstract class ComposerContent<P extends Props, S, E extends Elements> ex
     public static pendingPageKeywords: string;
 
     public static setPageInfo(props: any, pageInfo: PageInfo) {}
-    
+
     public static setPageTitle(title: string, pageInfo: PageInfo) {
         pageInfo.title = title;
     }
@@ -74,8 +76,16 @@ export abstract class ComposerContent<P extends Props, S, E extends Elements> ex
         pageInfo.description = description;
     }
 
+    public static setPageImage(image: string, pageInfo: PageInfo) {
+        pageInfo.image = image;
+    }
+
     public static setPageKeyword(keywords: string, pageInfo: PageInfo) {
         pageInfo.keywords = keywords;
+    }
+
+    public static setPageURL(path: string, pageInfo: PageInfo) {
+        pageInfo.URL = cf.ORIGIN + path;
     }
 
     public scrollWindowTo(to: number, duration: number): void {

@@ -172,7 +172,7 @@ gulp.task('l10ns:watch', function() {
 });
 
 gulp.task('rev', ['bundle', 'compass:app:dist'], function() {
-   return gulp.src('built/app/public/**/*.{css,svg,jpg,png,js}')
+   return gulp.src('built/app/public/**/*.{css,svg,jpg,png,js,ico,icns}')
         .pipe(rev())
         .pipe(gulp.dest('built/app/public'))
         .pipe(rev.manifest())

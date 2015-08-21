@@ -11,6 +11,8 @@ declare interface PageInfo {
     title?: string;
     description?: string;
     keywords?: string;
+    image?: string;
+    URL?: string;
 }
 
 declare interface DocumentProps extends Props {

@@ -3,7 +3,7 @@ import * as React from '../../component/element';
 import { ComposerContent } from '../../component/layerComponents';
 import express = require('express');
 
-interface TheNextEvolutionProps {
+interface Props {
     a: string;
     l10ns: any;
 }
@@ -12,8 +12,8 @@ interface TheNextEvolutionElements extends Elements {
 
 }
 
-export class TheNextEvolution extends ComposerContent<TheNextEvolutionProps, {}, TheNextEvolutionElements> {
-    public static fetch(req: express.Request): Promise<TheNextEvolutionProps> {
+export class TheNextEvolution extends ComposerContent<Props, {}, TheNextEvolutionElements> {
+    public static fetch(req: express.Request): Promise<Props> {
         let l = req.localizations;
         return Promise.resolve({
             a: 'a',
@@ -23,6 +23,10 @@ export class TheNextEvolution extends ComposerContent<TheNextEvolutionProps, {},
                 subTitle: l('THE_NEXT_EVOLUTION->SUB_TITLE'),
             }
         });
+    }
+
+    public static setPageInfo(props: Props, pageInfo: PageInfo) {
+        this.setPageImage('/public/images/logo.svg', pageInfo);
     }
 
     public render() {

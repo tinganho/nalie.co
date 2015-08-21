@@ -176,7 +176,7 @@ export default class ImageTestRunner {
             resolution: `${cf.DEFAULT_SCREEN_RESOLUTION.WIDTH}x${cf.DEFAULT_SCREEN_RESOLUTION.HEIGHT}`
         });
 
-        webdriverTest.get(`http://${cf.HOST}:${cf.DEFAULT_PORT}${initialRoute}`)
+        webdriverTest.get(`http://localhost:${cf.DEFAULT_PORT}${initialRoute}`)
             .wait({ css : 'html' })
 
         let browserActions = browserDirectives.useBrowserActions ?

@@ -9,11 +9,11 @@ export var cf = {
     DEFAULT_PORT: 3000,
 
     /**
-     * Default page timeout in seconds.
+     * App origin.
      *
      * @type string
      */
-    HOST: 'localhost',
+    ORIGIN: 'http://www.nalie.co',
 
     /**
      * Dimensions for View port of test page.
