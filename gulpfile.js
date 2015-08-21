@@ -116,6 +116,7 @@ gulp.task('tsc:watch', function() {
 });
 
 gulp.task('tsc:dist', ['l10ns', 'copy-public'], function(next) {
+    console.log(tscCommand);
     exec(tscCommand, function(err, stdout, stderr) {
         // console.log(stdout);
         // console.log(stderr);
