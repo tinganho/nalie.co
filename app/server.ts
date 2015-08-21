@@ -48,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
         return next();
     })
 }
-app.use('/public', express.static(path.join(__dirname, 'public'), { etag: false }));
+app.use('/public', express.static(path.join(__dirname, 'public'), { etag: false, lastModified: false }));
 app.use('/', express.static(__dirname));
 app.use(cookieParser());
 app.use(requestLanguage({
