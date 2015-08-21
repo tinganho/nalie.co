@@ -6,7 +6,7 @@ export var cf = {
      *
      * @type number
      */
-    PORT: 3000,
+    DEFAULT_PORT: 3000,
 
     /**
      * Default page timeout in seconds.
