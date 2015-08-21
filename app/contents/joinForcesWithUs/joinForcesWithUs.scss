@@ -1,0 +1,30 @@
+
+@import "compass";
+
+#JoinForcesWithUsHeaders {
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+
+    @media(max-width: 500px) {
+        max-width: none;
+        padding: 0 20px;
+    }
+}
+
+#JoinForcesWithUsRoles {
+    margin: 100px auto;
+    padding: 20px;
+    @include display-flex;
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+
+    @media(max-width: 500px) {
+        margin: 50px auto;
+    }
+}
+
+.JoinForcesWithUsRole {
+    float: left;
+    margin: 10px 20px;
+}

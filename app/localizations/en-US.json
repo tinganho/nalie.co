@@ -1,0 +1,180 @@
+[
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "BKBEdKKEua",
+    "key": "FOOTER->COPRYIGHT",
+    "new": false,
+    "timestamp": "2015-08-20T04:45:37.523Z",
+    "value": "© 2015-{thisYear} NALIE AB",
+    "variables": [
+      "thisYear"
+    ]
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "XjEKbebEIG",
+    "key": "FOOTER->ABOUT",
+    "new": false,
+    "timestamp": "2015-08-20T04:42:59.949Z",
+    "value": "About",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "qo6angn6ua",
+    "key": "FOOTER->CONTACT",
+    "new": false,
+    "timestamp": "2015-08-20T04:42:59.949Z",
+    "value": "Contact",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "yxG89k9Gtj",
+    "key": "FOOTER->JOBS",
+    "new": false,
+    "timestamp": "2015-08-20T04:42:59.949Z",
+    "value": "Jobs",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "G5GA9d9GHE",
+    "key": "FOOTER->TERMS",
+    "new": false,
+    "timestamp": "2015-08-20T04:42:59.949Z",
+    "value": "Terms",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "A5AE4GjpU8",
+    "key": "JOIN_FORCES_WITH_US->ROLE1",
+    "new": false,
+    "timestamp": "2015-08-19T18:23:56.534Z",
+    "value": "HW Design Engineer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "XjEKB5gphA",
+    "key": "JOIN_FORCES_WITH_US->ROLE2",
+    "new": false,
+    "timestamp": "2015-08-19T18:23:56.534Z",
+    "value": "Industrial Designer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "E5EA4GjpFy",
+    "key": "JOIN_FORCES_WITH_US->ROLE3",
+    "new": false,
+    "timestamp": "2015-08-19T18:23:56.534Z",
+    "value": "Software Engineer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "LqkanbGBS4",
+    "key": "JOIN_FORCES_WITH_US->ROLE4",
+    "new": false,
+    "timestamp": "2015-08-19T18:23:56.534Z",
+    "value": "Frontend Engineer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "5o6a7dL7S8",
+    "key": "JOIN_FORCES_WITH_US->SUB_TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T17:49:23.537Z",
+    "value": "It requires a team to build something evolutionary. Join forces with us to tackle some of the hardest problems.",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "KGK8RXERCg",
+    "key": "JOIN_FORCES_WITH_US->TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T17:49:23.537Z",
+    "value": "Join Forces With Us",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theWorldWillChange/theWorldWillChange.tsx"
+    ],
+    "id": "4Lj8RpyLt5",
+    "key": "THE_WORLD_WILL_CHANGE->SUB_TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T17:05:01.425Z",
+    "value": "If Nalie succeeds, it will change the lives of millions.",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theWorldWillChange/theWorldWillChange.tsx"
+    ],
+    "id": "yxG8XpqxUb",
+    "key": "THE_WORLD_WILL_CHANGE->TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T17:05:01.425Z",
+    "value": "The World Will Change",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theNextEvolution/theNextEvolution.tsx"
+    ],
+    "id": "6LjMRaReue",
+    "key": "THE_NEXT_EVOLUTION->SUB_TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T16:26:44.428Z",
+    "value": "The Web have taken 4 major evolution steps and we think Nalie will help make its fifth’s with the help of a device.",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theNextEvolution/theNextEvolution.tsx"
+    ],
+    "id": "gjx5484BUg",
+    "key": "THE_NEXT_EVOLUTION->TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T16:26:44.428Z",
+    "value": "The Next Evolution",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/hero/hero.tsx"
+    ],
+    "id": "gjx5KM7nhX",
+    "key": "HERO->SUB_TITLE",
+    "new": false,
+    "timestamp": "2015-08-19T11:09:35.833Z",
+    "value": "Representing the next evolution of the web.",
+    "variables": []
+  }
+]

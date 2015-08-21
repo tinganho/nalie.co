@@ -1,0 +1,49 @@
+
+.Region {
+    position: relative;
+}
+
+#TopSection {
+    @extend .Region;
+    height: 450px;
+
+    @media(max-width: 500px) {
+        height: 400px;
+    }
+}
+
+#Section1 {
+    @extend .Region;
+    height: 550px;
+
+    @media(max-width: 500px) {
+        height: 460px;
+    }
+}
+
+#Section2 {
+    @extend .Region;
+    height: 480px;
+
+    @media(max-width: 500px) {
+        height: 430px;
+    }
+}
+
+#Section3 {
+    @extend .Region;
+    height: 480px;
+
+    @media(max-width: 500px) {
+        height: 430px;
+    }
+}
+
+#Footer {
+    @extend .Region;
+    height: 100px;
+
+    @media(max-width: 500px) {
+        height: 60px;
+    }
+}

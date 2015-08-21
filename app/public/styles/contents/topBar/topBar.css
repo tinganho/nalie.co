@@ -1,0 +1,41 @@
+#TopBar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  z-index: 1000;
+}
+#TopBar.isHidden {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+#TopBar.isRevealed {
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+@media (max-width: 500px) {
+  #TopBar {
+    display: none;
+  }
+}
+
+#TopBarLogo {
+  height: 18px;
+  cursor: pointer;
+}
+#TopBarLogo:active {
+  opacity: 0.3;
+}

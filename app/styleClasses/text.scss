@@ -1,0 +1,61 @@
+
+.HeaderWhite1 {
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+
+    @media(max-width: 500px) {
+        font-size: 12px;
+    }
+}
+
+.HeaderBlue1 {
+    margin-top: 60px;
+    font-weight: 200;
+    font-size: 36px;
+    letter-spacing: 1.1px;
+    font-weight: 200;
+    color: #386499;
+
+    @media(max-width: 500px) {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+}
+
+.HeaderBlue2 {
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    font-weight: 200;
+    color: #386499;
+    line-height: 19px;
+
+    @media(max-width: 500px) {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.Anchor {
+    cursor: pointer;
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+.BlueAnchor1 {
+    @extend .Anchor;
+    font-weight: 500;
+    color: #386499;
+}
+
+.BlueAnchor2 {
+    @extend .Anchor;
+    font-weight: 500;
+    color: #6D98CB;
+    font-size: 13px;
+    text-decoration: none;
+}

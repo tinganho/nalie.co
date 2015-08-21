@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="244px" height="58px" viewBox="0 0 244 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>NALIE</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="263" height="58"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="LandingPage" sketch:type="MSArtboardGroup" transform="translate(-278.000000, -125.000000)">
+            <g id="Hero" sketch:type="MSLayerGroup">
+                <g id="NALIE" transform="translate(259.000000, 125.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <g id="I" mask="url(#mask-2)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                        <g transform="translate(195.905550, -2.776786)" id="Rectangle-10">
+                            <rect x="0.0944498539" y="0" width="4.61000013" height="65"></rect>
+                        </g>
+                    </g>
+                    <g id="E" mask="url(#mask-2)" stroke-linecap="square" stroke="#FFFFFF" stroke-width="4.608" sketch:type="MSShapeGroup">
+                        <g transform="translate(224.331061, -0.776786)">
+                            <path d="M2.97080916,28.304 L39.2833291,28.304" id="Line-Copy-5"></path>
+                            <path d="M2.97080916,2.58928571 L39.2833291,2.58928571" id="Line-Copy-9"></path>
+                            <path d="M2.97080916,56.4464286 L39.2833291,56.4464286" id="Line-Copy-8"></path>
+                            <path d="M2.30477118,0.129464286 L2.30477118,59.1651786" id="Line-Copy"></path>
+                        </g>
+                    </g>
+                    <g id="L" mask="url(#mask-2)" stroke-linecap="square" stroke="#FFFFFF" stroke-width="4.608" sketch:type="MSShapeGroup">
+                        <g transform="translate(142.383642, -0.258929)" id="Line">
+                            <path d="M2.30477118,0 L2.30477118,58.7767857"></path>
+                            <path d="M2.43281402,55.9285714 L32.650925,55.9285714"></path>
+                        </g>
+                    </g>
+                    <g id="A" mask="url(#mask-2)" stroke-linecap="square" stroke="#FFFFFF" stroke-width="4.608" sketch:type="MSShapeGroup">
+                        <g transform="translate(80.154820, -0.517857)" id="Line">
+                            <path d="M0.128042843,58.3883929 L21.6392405,0.129464286"></path>
+                            <path d="M21.8953262,58.3883929 L43.4065239,0.129464286" transform="translate(32.650925, 29.258929) scale(1, -1) translate(-32.650925, -29.258929) "></path>
+                        </g>
+                    </g>
+                    <g id="N" mask="url(#mask-2)" stroke-linecap="square" stroke="#FFFFFF" stroke-width="4.608" sketch:type="MSShapeGroup">
+                        <g transform="translate(19.462512, -0.517857)">
+                            <path d="M2.30477118,0.388392857 L2.30477118,58.1294643" id="Line"></path>
+                            <path d="M37.9006816,0.647321429 L37.9006816,58.3883929" id="Line-Copy-2"></path>
+                            <path d="M2.43281402,0.129464286 L36.2361246,58.6473214" id="Line"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

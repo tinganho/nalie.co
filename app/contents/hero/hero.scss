@@ -1,0 +1,31 @@
+
+@import "compass";
+
+#HeroHeaders {
+    overflow: hidden;
+    text-align: center;
+}
+
+#Hero {
+    height: 100%;
+    background-color: #333;
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+#HeroTitle {
+    height: 60px;
+
+    @media(max-width: 800px) {
+        height: 35px;
+    }
+}
+
+#HeroDescription {
+    margin-top: 30px;
+
+    @media(max-width: 500px) {
+        margin-top: 20px;
+    }
+}

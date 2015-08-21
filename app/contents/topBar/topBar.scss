@@ -1,0 +1,34 @@
+
+@import "compass";
+
+#TopBar {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    @include transition(transform 0.2s);
+    z-index: 1000;
+
+    &.isHidden {
+        @include transform(translateY(-100%));
+    }
+
+    &.isRevealed {
+        @include transform(translateY(  0%));
+    }
+
+    @media(max-width: 500px) {
+        display: none;
+    }
+}
+
+#TopBarLogo {
+    height: 18px;
+    cursor: pointer;
+
+    &:active {
+        opacity: 0.3;
+    }
+}

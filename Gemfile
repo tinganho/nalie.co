@@ -1,0 +1,7 @@
+source 'http://rubygems.org'
+gem 'sass'
+gem 'compass', '1.0.0'
+gem 'compass-placeholder'
+gem 'animation'
+gem 'compass-retina-sprites'
+gem 'sass-css-importer'

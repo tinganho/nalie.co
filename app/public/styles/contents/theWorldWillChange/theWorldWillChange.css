@@ -1,0 +1,20 @@
+#TheWorldWillChange {
+  text-align: center;
+}
+
+#TheWorldWillChangeHeaders {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #TheWorldWillChangeHeaders {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+#TheWorldWillChangeIcon {
+  margin-top: 90px;
+  width: 156px;
+}

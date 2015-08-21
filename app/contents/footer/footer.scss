@@ -1,0 +1,31 @@
+
+@import "compass";
+
+#Footer {
+    overflow: hidden;
+}
+
+#FooterMenu {
+    margin-top: 20px;
+    @include display-flex;
+    @include justify-content(center);
+
+    @media(max-width: 500px) {
+        margin-top: 10px;
+    }
+}
+
+.FooterMenuItem {
+    float: left;
+    margin: 10px 17px;
+}
+
+#Copyright {
+    position: absolute;
+    left: 20px;
+    top: 32px;
+
+    @media(max-width: 600px) {
+        display: none;
+    }
+}
