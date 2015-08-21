@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var rename = require('gulp-rename');
-var generateTsDiagnostics = require('gulp-generate-ts-diagnostics');
 var path = require('path');
 var fs = require('fs');
 var mochaPhantomJs = require('gulp-mocha-phantomjs');
