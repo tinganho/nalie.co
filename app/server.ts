@@ -38,7 +38,17 @@ import {
 
 let app = express();
 app.use(logger('dev'));
-app.use('/public', express.static(path.join(__dirname, '../../public'), process.env.NODE_ENV == 'production' ? { maxAge: 365*24*3600 } : undefined));
+if (process.env.NODE_ENV === 'production') {
+    app.use((req, res, next) => {
+        console.log(req.url)
+        if(req.url.indexOf('/public/') === 0) {
+            res.setHeader('Cache-Control', 'public, max-age=31536000000');
+            res.setHeader('Expires', new Date(Date.now() + 365*24*3600*1000).toUTCString());
+        }
+        return next();
+    })
+}
+app.use('/public', express.static(path.join(__dirname, 'public'), { etag: false }));
 app.use('/', express.static(__dirname));
 app.use(cookieParser());
 app.use(requestLanguage({
