@@ -254,7 +254,7 @@ export class ServerComposer {
         this.server.on('error', (err: Error) => {
             printError(err);
         });
-        this.server.listen(process.env.NODE_ENV || cf.DEFAULT_PORT, callback);
+        this.server.listen(process.env.PORT || cf.DEFAULT_PORT, callback);
     }
 
     public stop(callback?: (err?: Error) => void): void {
