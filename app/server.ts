@@ -110,6 +110,6 @@ export function start() {
         if (err) {
             throw err;
         }
-        Debug.prompt(`Server started at port ${cf.DEFAULT_PORT}. Press CTRL + C to exit.`);
+        Debug.prompt(`Server started at port ${process.env.PORT || cf.DEFAULT_PORT}. Press CTRL + C to exit.`);
     });
 }
