@@ -1,6 +1,17 @@
 [
   {
     "files": [
+      "app/contents/hero/hero.tsx"
+    ],
+    "id": "bz9MXqXAh7",
+    "key": "PAGE->MISSING_FEATURE_ERROR_MESSAGE",
+    "new": true,
+    "timestamp": "2015-08-22T12:31:25.978Z",
+    "value": "You are using an old browser. So this page might not work correctly du to that.",
+    "variables": []
+  },
+  {
+    "files": [
       "app/contents/footer/footer.tsx"
     ],
     "id": "BKBEdKKEua",

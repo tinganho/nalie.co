@@ -11,11 +11,14 @@ interface HeroElements extends Elements {
 
 }
 
+declare let Modernizr: any;
+
 export class Hero extends ComposerContent<Props, {}, HeroElements> {
     public static fetch(req: express.Request): Promise<Props> {
         let l = req.localizations;
         return Promise.resolve({
             l10ns: {
+                pageMissingFeatureErrorMessage: l('PAGE->MISSING_FEATURE_ERROR_MESSAGE'),
                 subTitle: l('HERO->SUB_TITLE')
             }
         });
@@ -25,6 +28,14 @@ export class Hero extends ComposerContent<Props, {}, HeroElements> {
         this.setPageTitle(`Nalie | ${props.l10ns.subTitle}`, pageInfo);
         this.setPageURL('/', pageInfo);
         this.setPageImage('/public/images/web.jpg', pageInfo);
+    }
+
+    public bindDOM() {
+        super.bindDOM();
+        
+        if (!Modernizr.svg || !Modernizr.cssgradients) {
+            alert(this.props.l10ns.pageMissingFeatureErrorMessage);
+        }
     }
 
     public render() {

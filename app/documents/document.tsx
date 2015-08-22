@@ -59,6 +59,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <meta name='viewport' content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi' />
                     <meta property='og:site_name' content='Nalie' />
                     <script type='text/javascript' html='window.inServer = false; window.inClient = true;'></script>
+                    <script type='text/javascript' src='/public/scripts/vendor/modernizr.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.prototype.finally.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/system.js'></script>

@@ -1,6 +1,7 @@
 
 built
 node_modules/
+app/localizations/output/
 app/public/scripts/bindings.js
 app/public/scripts/router.js
 app/public/styles/
