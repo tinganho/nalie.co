@@ -76,8 +76,8 @@ export abstract class ComposerContent<P extends Props, S, E extends Elements> ex
         pageInfo.description = description;
     }
 
-    public static setPageImage(image: string, pageInfo: PageInfo) {
-        pageInfo.image = image;
+    public static setPageImage(path: string, pageInfo: PageInfo) {
+        pageInfo.image = cf.ORIGIN + path;
     }
 
     public static setPageKeyword(keywords: string, pageInfo: PageInfo) {

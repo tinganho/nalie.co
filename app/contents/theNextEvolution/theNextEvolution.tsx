@@ -7,7 +7,6 @@ import Conf = require('../../../conf/conf');
 let cf: typeof Conf.default = inServer ? __r('../../../conf/conf').default : undefined;
 
 interface Props {
-    a: string;
     l10ns: any;
 }
 
@@ -19,17 +18,11 @@ export class TheNextEvolution extends ComposerContent<Props, {}, TheNextEvolutio
     public static fetch(req: express.Request): Promise<Props> {
         let l = req.localizations;
         return Promise.resolve({
-            a: 'a',
-            b: 'b',
             l10ns: {
                 title: l('THE_NEXT_EVOLUTION->TITLE'),
                 subTitle: l('THE_NEXT_EVOLUTION->SUB_TITLE'),
             }
         });
-    }
-
-    public static setPageInfo(props: Props, pageInfo: PageInfo) {
-        this.setPageImage(cf.ORIGIN + '/public/images/logo.svg', pageInfo);
     }
 
     public render() {
