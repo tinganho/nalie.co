@@ -13,6 +13,7 @@ declare interface PageInfo {
     keywords?: string;
     image?: string;
     URL?: string;
+    lang?: string;
     language?: string;
 }
 

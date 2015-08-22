@@ -516,6 +516,7 @@ export class Page {
         let numberOfContents = 0;
         let finishedContentFetchings = 0;
         req.pageInfo = {
+            lang: req.language.slice(0, req.language.length - 3),
             language: req.language,
         };
 

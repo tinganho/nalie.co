@@ -11,7 +11,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
     public id = 'composer-document';
     public render() {
         return (
-            <html lang={this.props.pageInfo.language}>
+            <html lang={this.props.pageInfo.lang}>
                 <head>
                     <title>{this.props.pageInfo.title}</title>
                     <meta property='og:title' content={this.props.pageInfo.title} />
