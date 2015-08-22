@@ -17,6 +17,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <meta property='og:title' content={this.props.pageInfo.title} />
                     <meta charset='utf-8'></meta>
                     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'></meta>
+                    <meta property='og:type' content='website' />
                     {
                         (() => {
                             if (this.props.pageInfo.description) {
@@ -59,6 +60,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <script type='text/javascript' src='/public/scripts/vendor/promise.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.prototype.finally.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/system.js'></script>
+
                     {this.props.jsonScriptData.map(attr => {
                         return (
                             <script
@@ -68,6 +70,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                             </script>
                         );
                     })}
+
                 </head>
                 <body id="LayoutRegion">
                     {this.props.layout}

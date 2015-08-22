@@ -2,6 +2,9 @@
 import * as React from '../../component/element';
 import { ComposerContent } from '../../component/layerComponents';
 import express = require('express');
+let __r = require;
+import Conf = require('../../conf/conf');
+let cf: typeof Conf.default = inServer ? __r('../../conf/conf').default : undefined;
 
 interface Props {
     a: string;
@@ -26,7 +29,7 @@ export class TheNextEvolution extends ComposerContent<Props, {}, TheNextEvolutio
     }
 
     public static setPageInfo(props: Props, pageInfo: PageInfo) {
-        this.setPageImage('/public/images/logo.svg', pageInfo);
+        this.setPageImage(cf.ORIGIN + '/public/images/logo.svg', pageInfo);
     }
 
     public render() {
