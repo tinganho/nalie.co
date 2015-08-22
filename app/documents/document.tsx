@@ -27,6 +27,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                             }
                         })()
                     }
+
                     {
                         (() => {
                             if (this.props.pageInfo.image) {
@@ -34,7 +35,8 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                             }
                         })()
                     }
-                     {
+
+                    {
                         (() => {
                             if (this.props.pageInfo.URL) {
                                 return [
@@ -69,17 +71,18 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                 </head>
                 <body id="LayoutRegion">
                     {this.props.layout}
+
+                    {
+                        (() => {
+                            if (this.manifestExists) {
+                                return <script type='text/javascript' src='/public/scripts/app.js'></script>
+                            }
+                            else {
+                                return <script type='text/javascript' src='/public/scripts/startup.js'></script>;
+                            }
+                        })()
+                    }
                 </body>
-                {
-                    (() => {
-                        if (this.manifestExists) {
-                            return <script type='text/javascript' src='/public/scripts/app.js'></script>
-                        }
-                        else {
-                            return <script type='text/javascript' src='/public/scripts/startup.js'></script>;
-                        }
-                    })()
-                }
             </html>
         );
     }

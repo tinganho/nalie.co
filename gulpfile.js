@@ -177,7 +177,7 @@ gulp.task('rev', ['bundle', 'compass:app:dist'], function() {
     var jsFilter = filter('**/*.js', { restore: true });
     var cssFilter = filter('**/*.css', { restore: true });
 
-    return gulp.src('built/app/public/**/*.{css,svg,jpg,png,js,ico,icns}')
+    return gulp.src('built/app/public/**/*')
         .pipe(jsFilter)
         .pipe(uglify({ mangle: false }))
         .pipe(jsFilter.restore)
