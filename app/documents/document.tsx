@@ -1,14 +1,33 @@
 
 import * as React from '../component/element';
 import { ComposerDocument, Link } from '../component/layerComponents';
+let __r = require;
+import Sys from '../sys';
+let sys: typeof Sys = inServer ? __r('../sys').default : undefined;
+import * as Path from 'path';
+let path: typeof Path = inServer ? __r('path') : undefined;
+
 
 interface ComposerDocumentProps extends DocumentProps {
     title: string;
     layout: string;
+    weixinShare: string;
 }
 
 export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elements> {
-    public id = 'composer-document';
+    public weixinShare: string;
+
+    constructor (
+        props?: ComposerDocumentProps,
+        children?: Child[]) {
+
+        super(props, children);
+
+        if (inServer) {
+            this.weixinShare = sys.readFile(path.join(__dirname, '../public/scripts/vendor/weixin-share.js'));
+        }
+    }
+
     public render() {
         return (
             <html lang={this.props.pageInfo.lang}>
@@ -59,6 +78,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <link rel='stylesheet' href='/public/styles/styles.css'/>
                     <meta name='viewport' content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi' />
                     <meta property='og:site_name' content='Nalie' />
+                    <script type='text/javascript' html={this.weixinShare}></script>
                     <script type='text/javascript' html='window.inServer = false; window.inClient = true;'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/modernizr.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.js'></script>

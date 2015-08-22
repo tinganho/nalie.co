@@ -12,6 +12,7 @@ interface HeroElements extends Elements {
 }
 
 declare let Modernizr: any;
+declare let cf: any;
 
 export class Hero extends ComposerContent<Props, {}, HeroElements> {
     public static fetch(req: express.Request): Promise<Props> {
@@ -32,10 +33,14 @@ export class Hero extends ComposerContent<Props, {}, HeroElements> {
 
     public bindDOM() {
         super.bindDOM();
-        
+
         if (!Modernizr.svg || !Modernizr.cssgradients) {
             alert(this.props.l10ns.pageMissingFeatureErrorMessage);
         }
+
+        (window as any).weixinShare.URL = window.location.href;
+        (window as any).weixinShare.title = `Nalie | ${this.props.l10ns.subTitle}`;
+        (window as any).weixinShare.imgURL = `${window.location.origin}/public/images/web.jpg`;
     }
 
     public render() {
