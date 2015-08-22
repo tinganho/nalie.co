@@ -40,7 +40,7 @@ export class Hero extends ComposerContent<Props, {}, HeroElements> {
 
         (window as any).weixinShare.URL = window.location.href;
         (window as any).weixinShare.title = `Nalie | ${this.props.l10ns.subTitle}`;
-        (window as any).weixinShare.imgURL = window.location.origin + '/public/images/app.jpg';
+        (window as any).weixinShare.imgURL = window.location.origin + '/public/images/app.png';
     }
 
     public render() {
