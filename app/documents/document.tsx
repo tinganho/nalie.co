@@ -18,7 +18,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <meta charset='utf-8'></meta>
                     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'></meta>
                     <meta property='og:type' content='website' />
-                    <meta name='twitter:card' content='summary' />
+                    <meta name='twitter:card' content='summary_large_image' />
 
                     {
                         (() => {
