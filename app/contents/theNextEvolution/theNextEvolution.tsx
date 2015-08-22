@@ -3,8 +3,8 @@ import * as React from '../../component/element';
 import { ComposerContent } from '../../component/layerComponents';
 import express = require('express');
 let __r = require;
-import Conf = require('../../conf/conf');
-let cf: typeof Conf.default = inServer ? __r('../../conf/conf').default : undefined;
+import Conf = require('../../../conf/conf');
+let cf: typeof Conf.default = inServer ? __r('../../../conf/conf').default : undefined;
 
 interface Props {
     a: string;
