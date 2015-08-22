@@ -22,8 +22,7 @@ export class Hero extends ComposerContent<Props, {}, HeroElements> {
     }
 
     public static setPageInfo(props: Props, pageInfo: PageInfo): void {
-        this.setPageTitle('Nalie', pageInfo);
-        this.setPageDescription(props.l10ns.subTitle, pageInfo);
+        this.setPageTitle(`Nalie | ${props.l10ns.subTitle}`, pageInfo);
         this.setPageURL('/', pageInfo);
         this.setPageImage('/public/images/web.jpg', pageInfo);
     }

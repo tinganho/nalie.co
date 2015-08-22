@@ -25,6 +25,10 @@ export class TheNextEvolution extends ComposerContent<Props, {}, TheNextEvolutio
         });
     }
 
+    public static setPageInfo(props: Props, pageInfo: PageInfo) {
+        this.setPageDescription(props.l10ns.subTitle, pageInfo);
+    }
+
     public render() {
         return (
             <div class='LighterBlueBG FillParentLayout'>
