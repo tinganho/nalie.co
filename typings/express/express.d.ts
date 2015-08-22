@@ -20,6 +20,7 @@ declare module Express {
     export interface Request {
         localizations: any;
         pageInfo: any;
+        language: string;
     }
     export interface Response { }
     export interface Application { }

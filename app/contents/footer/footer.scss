@@ -29,3 +29,24 @@
         display: none;
     }
 }
+
+#FooterChangeLanguageButton {
+    background-color: #B0CCEC;
+    border-radius: 2px;
+    padding: 6px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+
+    &:active {
+        color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+#FooterContact {
+    @media(max-width: 400px) {
+        display: none;
+    }
+}
