@@ -69,14 +69,14 @@ var compassOptions = {
 }
 
 gulp.task('compass:app:dev', function() {
-    return gulp.src('app/index.scss', { base: 'app' })
+    return gulp.src('app/styles.scss', { base: 'app' })
         .pipe(compass(compassOptions));
 });
 
 gulp.task('compass:app:dist', function() {
     var options = compassOptions;
     options.source_map = false;
-    return gulp.src('app/index.scss', { base: 'app' })
+    return gulp.src('app/styles.scss', { base: 'app' })
         .pipe(compass(compassOptions));
 });
 
@@ -125,7 +125,7 @@ gulp.task('tsc:dist', ['l10ns', 'copy-public'], function(next) {
     });
 });
 
-gulp.task('copy-public', ['clean'], function() {
+gulp.task('copy-public', ['clean', 'compass:app:dist'], function() {
     var publicCopyStream = gulp.src('app/public/**/*')
         .pipe(gulp.dest('built/app/public'));
 
@@ -173,7 +173,7 @@ gulp.task('l10ns:watch', function() {
     gulp.watch('app/localizations/*.json', ['l10ns']);
 });
 
-gulp.task('rev', ['bundle', 'compass:app:dist'], function() {
+gulp.task('rev', ['bundle'], function() {
     var jsFilter = filter('**/*.js', { restore: true });
     var cssFilter = filter('**/*.css', { restore: true });
 
