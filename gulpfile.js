@@ -185,9 +185,9 @@ gulp.task('rev', ['bundle'], function() {
         .pipe(csso())
         .pipe(cssFilter.restore)
         .pipe(rev())
+        .pipe(revReplace())
         .pipe(gulp.dest('built/app/public'))
         .pipe(rev.manifest())
-        .pipe(revReplace())
         .pipe(gulp.dest('built/app/public'));
 });
 
