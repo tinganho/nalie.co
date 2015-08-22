@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === 'production') {
             res.setHeader('Expires', new Date(Date.now() + 365*24*3600*1000).toUTCString());
         }
         return next();
-    })
+    });
 }
 app.use('/public', express.static(path.join(__dirname, 'public'), { etag: false }));
 app.use('/', express.static(__dirname));
