@@ -40,6 +40,7 @@
 }
 
 .Anchor {
+    @include user-select(none);
     cursor: pointer;
     &:active {
         opacity: 0.3;

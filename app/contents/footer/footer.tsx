@@ -42,10 +42,12 @@ export class Footer extends ComposerContent<Props, {}, FooterElements> {
 
     public bindDOM() {
         super.bindDOM();
-        this.elements.about.onClick(() => {
+        this.elements.about.onClick((event) => {
+            event.preventDefault();
             this.scrollWindowTo(0, 300);
         });
         this.elements.terms.onClick(() => {
+            event.preventDefault();
             alert('Sorry at this stage we have not done a terms page yet.');
         });
     }
