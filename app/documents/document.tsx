@@ -11,10 +11,11 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
     public id = 'composer-document';
     public render() {
         return (
-            <html lang='en'>
+            <html lang={this.props.pageInfo.language}>
                 <head>
                     <title>{this.props.pageInfo.title}</title>
                     <meta property='og:title' content={this.props.pageInfo.title} />
+                    <meta property='og:locale' content={this.props.pageInfo.language} />
                     <meta charset='utf-8'></meta>
                     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'></meta>
                     <meta property='og:type' content='website' />

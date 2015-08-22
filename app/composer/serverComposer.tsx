@@ -515,7 +515,9 @@ export class Page {
         let resultJsonScriptData: JsonScriptAttributes[] = [];
         let numberOfContents = 0;
         let finishedContentFetchings = 0;
-        req.pageInfo = {};
+        req.pageInfo = {
+            language: req.language,
+        };
 
         for (let region in contents) {
             numberOfContents++;

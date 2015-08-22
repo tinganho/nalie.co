@@ -61,7 +61,7 @@ gulp.task('clean', function() {
 
 var compassOptions = {
     project: __dirname,
-    css: 'built/app/public/styles',
+    css: 'app/public/styles',
     sass: 'app',
     bundle_exec: true,
     source_map: true,
