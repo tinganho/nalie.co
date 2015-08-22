@@ -55,7 +55,7 @@ app.use('/public', express.static(path.join(__dirname, 'public'), { etag: false 
 app.use('/', express.static(__dirname));
 app.use(cookieParser());
 app.use(requestLanguage({
-    languages: ['en-US'],
+    languages: ['en-US', 'zh-CN'],
     cookie: {
         name: 'language',
         options: { maxAge: 24*3600*1000 },

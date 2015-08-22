@@ -1,0 +1,191 @@
+[
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "XjEKbebEIG",
+    "key": "FOOTER->ABOUT",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "关于我们",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "qo6angn6ua",
+    "key": "FOOTER->CONTACT",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "联系我们",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "BKBEdKKEua",
+    "key": "FOOTER->COPRYIGHT",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "© 2015-{thisYear} NALIE AB",
+    "variables": [
+      "thisYear"
+    ]
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "yxG89k9Gtj",
+    "key": "FOOTER->JOBS",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "诚征英才",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/footer/footer.tsx"
+    ],
+    "id": "G5GA9d9GHE",
+    "key": "FOOTER->TERMS",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "用户协议",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/hero/hero.tsx"
+    ],
+    "id": "gjx5KM7nhX",
+    "key": "HERO->SUB_TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "开创下一个网络时代",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "A5AE4GjpU8",
+    "key": "JOIN_FORCES_WITH_US->ROLE1",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "HW Design Engineer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "XjEKB5gphA",
+    "key": "JOIN_FORCES_WITH_US->ROLE2",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "Industrial Designer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "E5EA4GjpFy",
+    "key": "JOIN_FORCES_WITH_US->ROLE3",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "Software Engineer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "LqkanbGBS4",
+    "key": "JOIN_FORCES_WITH_US->ROLE4",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "Frontend Engineer",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "5o6a7dL7S8",
+    "key": "JOIN_FORCES_WITH_US->SUB_TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "加入我们这个团队，让我们携手解决这些棘手问题，并开创一个网络新时代。",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/joinForcesWithUs/joinForcesWithUs.tsx"
+    ],
+    "id": "KGK8RXERCg",
+    "key": "JOIN_FORCES_WITH_US->TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "加入我们",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/hero/hero.tsx"
+    ],
+    "id": "bz9MXqXAh7",
+    "key": "PAGE->MISSING_FEATURE_ERROR_MESSAGE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "如果您用的是旧版本的浏览器，这个网页可能会出现一些浏览问题。",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theNextEvolution/theNextEvolution.tsx"
+    ],
+    "id": "6LjMRaReue",
+    "key": "THE_NEXT_EVOLUTION->SUB_TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "网络技术已经踏入了第4个大时代，我们相信Naile产品会引领网络进入第5个全新时代。",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theNextEvolution/theNextEvolution.tsx"
+    ],
+    "id": "gjx5484BUg",
+    "key": "THE_NEXT_EVOLUTION->TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "下一个时代",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theWorldWillChange/theWorldWillChange.tsx"
+    ],
+    "id": "4Lj8RpyLt5",
+    "key": "THE_WORLD_WILL_CHANGE->SUB_TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "如果Naile获得成功，将会改变亿万人的生活。",
+    "variables": []
+  },
+  {
+    "files": [
+      "app/contents/theWorldWillChange/theWorldWillChange.tsx"
+    ],
+    "id": "yxG8XpqxUb",
+    "key": "THE_WORLD_WILL_CHANGE->TITLE",
+    "new": true,
+    "timestamp": "2015-08-22T15:05:20.733Z",
+    "value": "世界将会发生改变",
+    "variables": []
+  }
+]
