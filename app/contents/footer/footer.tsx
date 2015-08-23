@@ -37,7 +37,7 @@ export class Footer extends ComposerContent<Props, {}, FooterElements> {
                 <ul id='FooterMenu'>
                     <li ref='about' class='FooterMenuItem'><a class='BlueAnchor2'>{this.props.l10ns.about}</a></li>
                     <li ref='terms' class='FooterMenuItem'><a class='BlueAnchor2'>{this.props.l10ns.terms}</a></li>
-                    <li class='FooterMenuItem'><a class='BlueAnchor2'>{this.props.l10ns.jobs}</a></li>
+                    <li class='FooterMenuItem' id='FooterJobs'><a class='BlueAnchor2'>{this.props.l10ns.jobs}</a></li>
                     <li class='FooterMenuItem' id='FooterContact'><a class='BlueAnchor2' href='mailto:tingan87@gmail.com' target='_blank'>{this.props.l10ns.contact}</a></li>
                     <li class='FooterMenuItem'><a id='FooterChangeLanguageButton' href={this.props.changeLangURL}>{this.props.changeLangText}</a></li>
                 </ul>

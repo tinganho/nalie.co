@@ -50,3 +50,11 @@
         display: none;
     }
 }
+
+#FooterJobs {
+    &:lang(zh) {
+        @media(max-width: 350px) {
+            display: none;
+        }
+    }
+}
