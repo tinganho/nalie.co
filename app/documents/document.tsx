@@ -81,6 +81,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <meta property='og:site_name' content='Nalie' />
                     <script type='text/javascript' html={this.weixinShare}></script>
                     <script type='text/javascript' html='window.inServer = false; window.inClient = true;'></script>
+                    <script type='text/javascript' html='document.addEventListener("touchstart", function(){}, true);'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/modernizr.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.prototype.finally.js'></script>
