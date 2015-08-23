@@ -12,6 +12,7 @@ interface HeroElements extends Elements {
 }
 
 declare let Modernizr: any;
+declare let weixinShare: any;
 declare let cf: any;
 
 export class Hero extends ComposerContent<Props, {}, HeroElements> {
@@ -38,9 +39,9 @@ export class Hero extends ComposerContent<Props, {}, HeroElements> {
             alert(this.props.l10ns.pageMissingFeatureErrorMessage);
         }
 
-        (window as any).weixinShare.URL = window.location.href;
-        (window as any).weixinShare.title = `Nalie | ${this.props.l10ns.subTitle}`;
-        (window as any).weixinShare.imgURL = window.location.origin + '/public/images/app.png';
+        weixinShare.URL = window.location.href;
+        weixinShare.title = `Nalie | ${this.props.l10ns.subTitle}`;
+        weixinShare.imgURL = window.location.origin + '/public/images/app.png';
     }
 
     public render() {
