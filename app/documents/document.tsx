@@ -11,11 +11,11 @@ let path: typeof Path = inServer ? __r('path') : undefined;
 interface ComposerDocumentProps extends DocumentProps {
     title: string;
     layout: string;
-    weixinShare: string;
 }
 
 export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elements> {
     public weixinShare: string;
+    public googleAnalytics: string;
 
     constructor (
         props?: ComposerDocumentProps,
@@ -25,6 +25,9 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
 
         if (inServer) {
             this.weixinShare = sys.readFile(path.join(__dirname, '../public/scripts/vendor/weixin-share.js'));
+            if (process.env.NODE_ENV === 'production') {
+                this.googleAnalytics = sys.readFile(path.join(__dirname, '../public/scripts/vendor/google-analytics.js'));
+            }
         }
     }
 
@@ -86,6 +89,7 @@ export class Document extends ComposerDocument<ComposerDocumentProps, {}, Elemen
                     <script type='text/javascript' src='/public/scripts/vendor/promise.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/promise.prototype.finally.js'></script>
                     <script type='text/javascript' src='/public/scripts/vendor/system.js'></script>
+                    <script html={this.googleAnalytics}></script>
 
                     {this.props.jsonScriptData.map(attr => {
                         return (
